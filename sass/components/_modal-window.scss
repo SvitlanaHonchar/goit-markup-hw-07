@@ -39,7 +39,7 @@
   }
 }
 
-.close-modal {
+.modal__button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -69,7 +69,12 @@
 
 /* ----------------FORM------------------- */
 
-.modal-form-title {
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__title {
   margin-bottom: 12px;
   text-align: center;
 
@@ -82,20 +87,11 @@
   color: var(--secondary-text-color-dark);
 }
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.modal-form-field {
+.field {
   margin-bottom: 10px;
 }
 
-.modal-form-field-comment {
-  margin-bottom: 20px;
-}
-
-.modal-form-input {
+.field__input {
   padding-left: 42px;
 
   width: 100%;
@@ -111,7 +107,7 @@
   }
 }
 
-.modal-form-input-descr {
+.field__description {
   display: block;
   margin-bottom: 4px;
 
@@ -120,12 +116,12 @@
   letter-spacing: 0.01em;
 }
 
-.modal-form-input-wrapper {
+.field__wrapper {
   position: relative;
   display: block;
 }
 
-.modal-form-icon {
+.field__icon {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -137,12 +133,25 @@
 
   transition: fill var(--transition-param);
 
-  .modal-form-input:focus + & {
+  .field__input:focus + & {
     fill: var(--accent-color);
   }
 }
 
-.modal-form-comment {
+.field-comment {
+  margin-bottom: 20px;
+}
+
+.field-comment__description {
+  display: block;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.167em;
+  letter-spacing: 0.01em;
+}
+
+.field-comment__textarea {
   display: block;
   padding: 12px 16px;
   resize: none;
@@ -168,7 +177,7 @@
   }
 }
 
-.modal-form-conditions {
+.field-conditions {
   display: flex;
   /* gap: 7px; */
   align-items: center;
@@ -182,11 +191,11 @@
   letter-spacing: 0.03em;
 }
 
-.modal-form-conditions-link {
+.field-conditions__link {
   color: var(--accent-color);
 }
 
-.modal-form-checkbox {
+.field-conditions__checkbox {
   border: 2px solid;
   border-color: var(--secondary-text-color-dark);
   border-radius: 2px;
@@ -194,25 +203,25 @@
   margin-right: 7px;
   transition: border-color var(--transition-param);
 
-  .modal-form-conditions-checkbox:checked + & {
+  .field-conditions__input:checked + & {
     fill: var(--accent-color);
     border: none;
   }
 }
 
-.modal-form-checkbox-icon {
+.field-conditions__icon {
   fill: #fff;
   /* display: none; */
   opacity: 0;
   transition: opacity var(--transition-param);
 
-  .modal-form-conditions-checkbox:checked + .modal-form-checkbox & {
+  .field-conditions__input:checked + .field-conditions__checkbox & {
     /* display: block; */
     opacity: 1;
   }
 }
 
-.modal-form-button {
+.form__button {
   padding: 10px 52px;
   min-width: 200px;
   border: none;

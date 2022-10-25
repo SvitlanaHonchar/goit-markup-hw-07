@@ -17,29 +17,31 @@
   </head>
   <body class="page">
     <!-- Шапка сайту -->
-    <header class="main-header">
-      <div class="container main-nav">
-        <nav class="nav-links">
-          <a href="/" class="link logo"
-            ><span class="logo-color-blue">Web</span>Studio
+    <header class="header">
+      <div class="container navigation">
+        <nav class="navigation__links">
+          <a href="/" class="logo link"
+            ><span class="logo--accent">Web</span>Studio
           </a>
           <ul class="site-nav list">
-            <li class="site-nav-item">
-              <a href="./index.html" class="site-nav-link">Студія</a>
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студія</a>
             </li>
-            <li class="site-nav-item">
-              <a href="./portfolio.html" class="site-nav-link current"
+            <li class="site-nav__item">
+              <a
+                href="./portfolio.html"
+                class="site-nav__link site-nav__link--current"
                 >Портфоліо</a
               >
             </li>
-            <li class="site-nav-item">
-              <a href="" class="site-nav-link">Контакти</a>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts list">
-          <li class="contacts-item">
-            <a href="mailto:info@devstudio.com" class="contacts-link">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
               <svg
                 class="envelope"
                 width="16px"
@@ -51,8 +53,8 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="contacts-item">
-            <a href="tel:+380961111111" class="contacts-link"
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link"
               ><svg
                 class="smartphone"
                 width="10px"
@@ -71,57 +73,57 @@
         <div class="container">
           <h1 class="visually-hidden">Приклади проектів</h1>
           <!-- Кнопки фільтру -->
-          <ul class="list projects-button-list">
+          <ul class="button-list list">
             <li>
-              <button type="button" class="projects-button-all">Усі</button>
+              <button type="button" class="button button-all">Усі</button>
             </li>
             <li>
-              <button type="button" class="projects-button">Веб-сайти</button>
+              <button type="button" class="button">Веб-сайти</button>
             </li>
             <li>
-              <button type="button" class="projects-button">Додатки</button>
+              <button type="button" class="button">Додатки</button>
             </li>
             <li>
-              <button type="button" class="projects-button">Дизайн</button>
+              <button type="button" class="button">Дизайн</button>
             </li>
             <li>
-              <button type="button" class="projects-button">Маркетинг</button>
+              <button type="button" class="button">Маркетинг</button>
             </li>
           </ul>
 
-          <ul class="list projects-list">
-            <li class="projects-list-item">
-              <a href="" class="projects-list-link link">
-                <div class="project-image-description">
+          <ul class="projects-list list">
+            <li class="project-card">
+              <a href="" class="project-card__link link">
+                <div class="project-card__description">
                   <img
                     src="./images/imgtech.jpg"
                     alt="Ноутбук з трьома анкетами на екрані"
                     width="370"
-                    class="project-image"
+                    class="project-card__image"
                   />
-                  <p class="project-description">
+                  <p class="project-card__text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
                     отримати вичерпні відомості про компанію чи приватну особу.
                   </p>
                 </div>
 
-                <div class="project-bottom-part">
-                  <h2 class="projects-title">Технокряк</h2>
-                  <p class="projects-text">Веб-сайт</p>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Технокряк</h2>
+                  <p class="project-card__subtitle">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="projects-list-item">
-              <a href="" class="projects-list-link link"
-                ><div class="project-image-description">
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
                   <img
                     src="./images/imgneworlean.jpg"
                     alt="Двоє спортсменів грають в баскетбол"
                     width="370"
-                    class="project-image"
+                    class="project-card__image"
                   />
-                  <p class="project-description">
+                  <p class="project-card__text">
                     Дорога в Карпатах. Сидить вуйко з кулеметом, направленим на
                     дорогу. Біля нього зупиняється машина:<br />
                     - Вуйку! Вас підвезти?<br />
@@ -134,45 +136,45 @@
                   </p>
                 </div>
 
-                <div class="project-bottom-part">
-                  <h2 class="projects-title">
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="projects-text">Дизайн</p>
+                  <p class="project-card__subtitle">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="projects-list-item">
-              <a href="" class="projects-list-link link"
-                ><div class="project-image-description">
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
                   <img
                     src="./images/imgseafood.jpg"
                     alt="Логотип ресторану"
                     width="370"
-                    class="project-image"
+                    class="project-card__image"
                   />
-                  <p class="project-description">
+                  <p class="project-card__text">
                     -Шановний,не пийте воду з цього ставка,туди лайно з всього
                     села стікає. <br />-Што ви гаварітє? Гаварітє па рускі,я вас
                     нє панімаю. <br />-Я кажу двома руками черпай!
                   </p>
                 </div>
-                <div class="project-bottom-part">
-                  <h2 class="projects-title">Ресторан Seafood</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Ресторан Seafood</h2>
+                  <p class="project-card__subtitle">Додаток</p>
                 </div></a
               >
             </li>
-            <li class="projects-list-item">
-              <a href="" class="projects-list-link link"
-                ><div class="project-image-description">
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
                   <img
                     src="./images/imgprime.jpg"
                     alt="Чорні навушники"
                     width="370"
-                    class="project-image"
+                    class="project-card__image"
                   />
-                  <p class="project-description">
+                  <p class="project-card__text">
                     Початок 90-х. Депутат вкотре просить дати слово...
                     <br />Спікер Верховної ради Плющ: Шановний, я вам дав слово,
                     але ви знову будете про москалів. <br />Депутат: Та ні, я
@@ -184,104 +186,106 @@
                     повісити, ані втопити!!!
                   </p>
                 </div>
-                <div class="project-bottom-part">
-                  <h2 class="projects-title">Проєкт Prime</h2>
-                  <p class="projects-text">Маркетинг</p>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Проєкт Prime</h2>
+                  <p class="project-card__subtitle">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="projects-list-item">
-              <a href="" class="projects-list-link link"
-                ><div class="project-image-description">
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
                   <img
                     src="./images/imgboxes.jpg"
                     alt="Дві коробки: біла і коричнева"
                     width="370"
-                    class="project-image"
+                    class="project-card__image"
                   />
-                  <p class="project-description">
+                  <p class="project-card__text">
                     - Діду !
                     <br />- Що! <br />- Чули, москалі у космос полетіли! <br />-
                     Що всі? <br />- Та ні, тільки один! <br />- То чого ж ти
                     тоді кричиш?...
                   </p>
                 </div>
-                <div class="project-bottom-part">
-                  <h2 class="projects-title">Проєкт Boxes</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Проєкт Boxes</h2>
+                  <p class="project-card__subtitle">Додаток</p>
                 </div></a
               >
             </li>
-            <li class="projects-list-item">
-              <a href="" class="projects-list-link link"
-                ><div class="project-image-description">
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
                   <img
                     src="./images/imginspiration.jpg"
                     alt="Монітор комп'ютера"
                     width="370"
-                    class="project-image"
+                    class="project-card__image"
                   />
-                  <p class="project-description">
+                  <p class="project-card__text">
                     Прочитав тривожне повідомлення: Нацполіція шукає вбивцю
                     росіян. Ось тепер думаю - може це вакансія?
                   </p>
                 </div>
-                <div class="project-bottom-part">
-                  <h2 class="projects-title">Inspiration has no Borders</h2>
-                  <p class="projects-text">Веб-сайт</p>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="project-card__subtitle">Веб-сайт</p>
                 </div></a
               >
             </li>
-            <li class="projects-list-item">
-              <a href="" class="projects-list-link link"
-                ><div class="project-image-description">
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
                   <img
                     src="./images/imglimited.jpg"
                     alt="Розгорнутий журнал"
                     width="370"
-                    class="project-image"
+                    class="project-card__image"
                   />
-                  <p class="project-description">
+                  <p class="project-card__text">
                     -Яка різниці між москалем та цибулею? - Коли ріжеш цибулю -
                     плачеш.
                   </p>
                 </div>
-                <div class="project-bottom-part">
-                  <h2 class="projects-title">Видання Limited Edition</h2>
-                  <p class="projects-text">Дизайн</p>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Видання Limited Edition</h2>
+                  <p class="project-card__subtitle">Дизайн</p>
                 </div></a
               >
             </li>
-            <li class="projects-list-item">
-              <a href="" class="projects-list-link link"
-                ><div class="project-image-description">
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
                   <img
                     src="./images/imglab.jpg"
                     alt="Бірка з написом Lab el tag"
                     width="370"
-                    class="project-image"
+                    class="project-card__image"
                   />
-                  <p class="project-description">
+                  <p class="project-card__text">
                     Як вступити в вашу організацію? - Треба вбити 8 москалів і
                     одного кота... - А кота за що? - Ви прийняті!
                   </p>
                 </div>
-                <div class="project-bottom-part">
-                  <h2 class="projects-title">Проєкт LAB</h2>
-                  <p class="projects-text">Маркетинг</p>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Проєкт LAB</h2>
+                  <p class="project-card__subtitle">Маркетинг</p>
                 </div></a
               >
             </li>
-            <li class="projects-list-item">
-              <a href="" class="projects-list-link link"
-                ><div class="project-image-description">
+            <li class="project-card">
+              <a href="" class="project-card__link link"
+                ><div class="project-card__description">
                   <img
                     src="./images/imgbusiness.jpg"
                     alt="Хтось друкує на ноутбуці"
                     width="370"
-                    class="project-image"
+                    class="project-card__image"
                   />
-                  <p class="project-description">
+                  <p class="project-card__text">
                     Криївка партизанів. Старшина, перекладач і полонений
                     "стрибок".
                     <br />- Cпитай москаля, де розташована їхня частина. <br />-
@@ -296,9 +300,9 @@
                     бояться.
                   </p>
                 </div>
-                <div class="project-bottom-part">
-                  <h2 class="projects-title">Growing Business</h2>
-                  <p class="projects-text">Додаток</p>
+                <div class="project-card__bottom">
+                  <h2 class="project-card__title">Growing Business</h2>
+                  <p class="project-card__subtitle">Додаток</p>
                 </div></a
               >
             </li>
@@ -308,45 +312,45 @@
     </main>
     <!-- Footer -->
     <footer class="footer">
-      <div class="container footer-list">
-        <div class="footer-item-contacts">
-          <a href="/" class="link logo"
-            ><span class="logo-color-blue">Web</span
-            ><span class="logo-color-white">Studio</span>
+      <div class="container footer-container">
+        <div class="footer-contacts">
+          <a href="/" class="logo footer__logo link"
+            ><span class="logo--accent">Web</span>Studio
           </a>
-
-          <address class="address-list">
+          <address class="footer-contacts__list">
             <ul class="list">
               <li>
                 <a
                   href="https://goo.gl/maps/kmzCdjqD1Y1qGuR56"
-                  class="link address"
+                  class="footer-contacts__address link"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="contact-details">
-                <a href="mailto:info@devstudio.com" class="contact-details-link"
+              <li class="footer-contacts__details">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="footer-contacts__link"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="contact-details">
-                <a href="tel:+380961111111" class="contact-details-link"
+              <li class="footer-contacts__details">
+                <a href="tel:+380961111111" class="footer-contacts__link"
                   >+38 096 111 11 11</a
                 >
               </li>
             </ul>
           </address>
         </div>
-        <div class="footer-item-social">
-          <p class="join-footer">приєднуйтесь</p>
-          <ul class="icon-social-list list">
+        <div class="footer-social">
+          <p class="footer-social__join">приєднуйтесь</p>
+          <ul class="social-list list">
             <li>
               <a
                 href="https://www.instagram.com/reel/CiNuIXJK9c2/?igshid=MDJmNzVkMjY="
-                class="icon-container-footer"
+                class="social-list__container social-list__container--theme-black"
               >
                 <svg
-                  class="icon-social-item-footer"
+                  class="social-list__icon social-list__icon--theme-black"
                   width="20px"
                   height="20px"
                   aria-label="instagram icon"
@@ -358,10 +362,10 @@
             <li>
               <a
                 href="https://twitter.com/narik_aliev/status/1580271273154088961?t=h1B4kh4Cckt_f39rNes0pg&s=19"
-                class="icon-container-footer"
+                class="social-list__container social-list__container--theme-black"
               >
                 <svg
-                  class="icon-social-item-footer"
+                  class="social-list__icon social-list__icon--theme-black"
                   width="20px"
                   height="20px"
                   aria-label="twitter icon"
@@ -373,10 +377,10 @@
             <li>
               <a
                 href="https://m.facebook.com/story.php?story_fbid=pfbid0i3GLEoEnbGa5veNkAZwb8phAN2K2F2kqnucc8ArQtwpkTTEEUkhczSsixQj2YfxQl&id=100063494801219"
-                class="icon-container-footer"
+                class="social-list__container social-list__container--theme-black"
               >
                 <svg
-                  class="icon-social-item-footer"
+                  class="social-list__icon social-list__icon--theme-black"
                   width="20px"
                   height="20px"
                   aria-label="facebook icon"
@@ -388,10 +392,10 @@
             <li>
               <a
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                class="icon-container-footer"
+                class="social-list__container social-list__container--theme-black"
               >
                 <svg
-                  class="icon-social-item-footer"
+                  class="social-list__icon social-list__icon--theme-black"
                   width="20px"
                   height="20px"
                   aria-label="linkedin icon"
@@ -402,22 +406,22 @@
             </li>
           </ul>
         </div>
-        <div class="footer-item-subscribe subscribe-container">
-          <p class="subscribe-footer">Підпишіться на розсилку</p>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe__join">Підпишіться на розсилку</p>
           <form class="subscribe-form">
             <label>
               <input
-                class="subscribe-form-input"
+                class="subscribe-form__input"
                 type="email"
                 name="user-email"
                 placeholder="E-mail"
                 required
               />
             </label>
-            <button type="submit" class="subscribe-form-button">
+            <button type="submit" class="subscribe-form__button">
               <span>Підписатися</span>
               <svg
-                class="subscribe-icon"
+                class="subscribe-form__icon"
                 width="24px"
                 height="24px"
                 aria-label="person icon"

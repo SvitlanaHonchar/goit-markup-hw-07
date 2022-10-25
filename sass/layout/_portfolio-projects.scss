@@ -1,4 +1,4 @@
-.projects-title {
+.project-card__title {
   margin-bottom: 4px;
 
   color: var(--secondary-text-color-dark);
@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 
-.projects-list-link {
+.project-card__link {
   display: block;
   color: inherit;
 
@@ -31,11 +31,11 @@
   }
 }
 
-.project-image {
+.project-card__image {
   display: block;
 }
 
-.project-bottom-part {
+.project-card__bottom {
   padding: 20px 24px;
 
   border-bottom: 1px solid #eeeeee;
@@ -43,18 +43,18 @@
   border-left: 1px solid #eeeeee;
 }
 
-.projects-text {
+.project-card__subtitle {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
 
-.project-image-description {
+.project-card__description {
   position: relative;
   overflow: hidden;
 }
 
-.project-description {
+.project-card__text {
   position: absolute;
   top: 0;
   left: 0;
@@ -78,8 +78,8 @@
 
   transition: transform var(--transition-param);
 
-  .projects-list-link:hover &,
-  .projects-list-link:focus & {
+  .project-card__link:hover &,
+  .project-card__link:focus & {
     transform: translate(0%, 0%);
   }
   &::-webkit-scrollbar {
@@ -96,7 +96,7 @@
   }
 }
 
-.projects-button-list {
+.button-list {
   display: flex;
   justify-content: center;
   column-gap: 8px;
@@ -104,7 +104,7 @@
   margin-bottom: 50px;
 }
 
-.projects-button {
+.button {
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
@@ -134,33 +134,7 @@
   }
 }
 
-.projects-button-all {
+.button-all {
   padding: 6px 25px;
   min-width: 73px;
-  border: none;
-  border-radius: 4px;
-
-  color: var(--secondary-text-color-dark);
-  background-color: var(--section-two-color);
-
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  transition: background-color var(--transition-param),
-    color var(--transition-param), box-shadow var(--transition-param);
-
-  &:hover,
-  &:focus {
-    color: var(--secondary-accent-color-light);
-    background-color: var(--accent-color);
-
-    cursor: pointer;
-
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
 }

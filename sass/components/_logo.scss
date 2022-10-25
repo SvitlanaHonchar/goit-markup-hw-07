@@ -1,8 +1,5 @@
 .logo {
   margin-right: 93px;
-}
-
-.logo {
   color: var(--logo-text-color-black);
 
   font-family: "Raleway", sans-serif;
@@ -14,14 +11,11 @@
   font-style: normal;
 }
 
-.footer .logo {
-  margin-right: 0px;
-}
-
-.logo-color-blue {
+.logo--accent {
   color: var(--accent-color);
 }
 
-.logo-color-white {
+.footer__logo {
+  margin-right: 0px;
   color: var(--secondary-accent-color-light);
 }

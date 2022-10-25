@@ -5,7 +5,7 @@
   column-gap: 30px;
 }
 
-.advantages-title {
+.advantages-list__title {
   margin-bottom: 10px;
 
   color: var(--secondary-text-color-dark);
@@ -17,8 +17,20 @@
   letter-spacing: 0.03em;
 }
 
-.advantages-text {
+.advantages-list__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.advantages-list__icon-container {
+  margin-bottom: 30px;
+  border-radius: 4px;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--section-two-color);
 }
