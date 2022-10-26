@@ -7,11 +7,6 @@
   align-items: center;
 }
 
-.navigation__links {
-  display: flex;
-  align-items: center;
-}
-
 /* Site-nav */
 
 .site-nav {
@@ -92,13 +87,7 @@
   margin-left: 50px;
 }
 
-.envelope {
+.contacts__icon {
   margin-right: 10px;
-  fill: currentColor;
-}
-
-.smartphone {
-  margin-right: 10px;
-
   fill: currentColor;
 }

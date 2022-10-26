@@ -3,7 +3,7 @@
   column-gap: 10px;
 }
 
-.social-list__container {
+.social-list__link {
   display: flex;
   column-gap: 10px;
   justify-content: center;
@@ -26,13 +26,13 @@
   fill: var(--clients-border-color);
   transition: fill var(--transition-param);
 
-  .social-list__container:hover &,
-  .social-list__container:focus & {
+  .social-list__link:hover &,
+  .social-list__link:focus & {
     fill: var(--secondary-accent-color-light);
   }
 }
 
-.social-list__container--theme-black {
+.social-list__link--theme-black {
   background-color: rgba(255, 255, 255, 0.1);
 }
 

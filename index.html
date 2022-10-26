@@ -18,10 +18,10 @@
   <body>
     <!-- Шапка сайту -->
     <header class="header">
-      <div class="container navigation">
-        <nav class="navigation__links">
+      <div class="container header-container">
+        <nav class="navigation">
           <a href="/" class="logo link"
-            ><span class="logo--accent">Web</span>Studio
+            ><span class="logo__accent">Web</span>Studio
           </a>
           <ul class="site-nav list">
             <li class="site-nav__item">
@@ -43,7 +43,7 @@
           <li class="contacts__item">
             <a href="mailto:info@devstudio.com" class="contacts__link">
               <svg
-                class="envelope"
+                class="contacts__icon"
                 width="16px"
                 height="12px"
                 aria-label="envelope icon"
@@ -56,7 +56,7 @@
           <li class="contacts__item">
             <a href="tel:+380961111111" class="contacts__link"
               ><svg
-                class="smartphone"
+                class="contacts__icon"
                 width="10px"
                 height="16px"
                 aria-label="smartphone icon"
@@ -71,7 +71,7 @@
     <!-- Основна частина -->
     <main>
       <!-- Герой -->
-      <section class="hero overlay">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">
             Ефективні рішення для <br />
@@ -83,7 +83,7 @@
         </div>
       </section>
       <!-- Наші переваги -->
-      <section class="advantages section">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-list list">
@@ -158,9 +158,9 @@
         </div>
       </section>
       <!-- Чим ми займаємося -->
-      <section class="section work">
+      <section class="section section--no-padding-top">
         <div class="container">
-          <h2 class="section-title">Чим ми займаємося</h2>
+          <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="work-list list">
             <li class="work-list__item">
               <img
@@ -195,24 +195,24 @@
         </div>
       </section>
       <!-- Наша команда -->
-      <section class="section team">
+      <section class="section section--other-background">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="section__title">Наша команда</h2>
           <ul class="team-list list">
-            <li class="team-member">
+            <li class="team-list__item">
               <img
                 src="./images/imgihor.jpg"
                 alt="Man in brown shirt"
                 width="270"
               />
-              <div class="team-member__bottom">
-                <h3 class="team-member__title">Ігор Дем'яненко</h3>
-                <p class="team-member__descr">Product Designer</p>
+              <div class="team-list__thumb">
+                <h3 class="team-list__title">Ігор Дем'яненко</h3>
+                <p class="team-list__descr">Product Designer</p>
                 <ul class="social-list list">
                   <li>
                     <a
                       href="https://www.instagram.com/reel/CiNuIXJK9c2/?igshid=MDJmNzVkMjY="
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -227,7 +227,7 @@
                   <li>
                     <a
                       href="https://twitter.com/narik_aliev/status/1580271273154088961?t=h1B4kh4Cckt_f39rNes0pg&s=19"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -242,7 +242,7 @@
                   <li>
                     <a
                       href="https://m.facebook.com/story.php?story_fbid=pfbid0i3GLEoEnbGa5veNkAZwb8phAN2K2F2kqnucc8ArQtwpkTTEEUkhczSsixQj2YfxQl&id=100063494801219"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -257,7 +257,7 @@
                   <li>
                     <a
                       href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -272,20 +272,20 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team-list__item">
               <img
                 src="./images/imgolha.jpg"
                 alt="Woman in black jacket"
                 width="270"
               />
-              <div class="team-member__bottom">
-                <h3 class="team-member__title">Ольга Рєпіна</h3>
-                <p class="team-member__descr">Frontend Developer</p>
+              <div class="team-list__thumb">
+                <h3 class="team-list__title">Ольга Рєпіна</h3>
+                <p class="team-list__descr">Frontend Developer</p>
                 <ul class="social-list list">
                   <li>
                     <a
                       href="https://www.instagram.com/reel/CiNuIXJK9c2/?igshid=MDJmNzVkMjY="
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -300,7 +300,7 @@
                   <li>
                     <a
                       href="https://twitter.com/narik_aliev/status/1580271273154088961?t=h1B4kh4Cckt_f39rNes0pg&s=19"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -315,7 +315,7 @@
                   <li>
                     <a
                       href="https://m.facebook.com/story.php?story_fbid=pfbid0i3GLEoEnbGa5veNkAZwb8phAN2K2F2kqnucc8ArQtwpkTTEEUkhczSsixQj2YfxQl&id=100063494801219"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -330,7 +330,7 @@
                   <li>
                     <a
                       href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -345,20 +345,20 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team-list__item">
               <img
                 src="./images/imgmykola.jpg"
                 alt="Man in gray shirt"
                 width="270"
               />
-              <div class="team-member__bottom">
-                <h3 class="team-member__title">Микола Тарасов</h3>
-                <p class="team-member__descr">Marketing</p>
+              <div class="team-list__thumb">
+                <h3 class="team-list__title">Микола Тарасов</h3>
+                <p class="team-list__descr">Marketing</p>
                 <ul class="social-list list">
                   <li>
                     <a
                       href="https://www.instagram.com/reel/CiNuIXJK9c2/?igshid=MDJmNzVkMjY="
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -373,7 +373,7 @@
                   <li>
                     <a
                       href="https://twitter.com/narik_aliev/status/1580271273154088961?t=h1B4kh4Cckt_f39rNes0pg&s=19"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -388,7 +388,7 @@
                   <li>
                     <a
                       href="https://m.facebook.com/story.php?story_fbid=pfbid0i3GLEoEnbGa5veNkAZwb8phAN2K2F2kqnucc8ArQtwpkTTEEUkhczSsixQj2YfxQl&id=100063494801219"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -403,7 +403,7 @@
                   <li>
                     <a
                       href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -418,20 +418,20 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team-list__item">
               <img
                 src="./images/imgmykhaylo.jpg"
                 alt="Man in black t-shirt"
                 width="270"
               />
-              <div class="team-member__bottom">
-                <h3 class="team-member__title">Михайло Єрмаков</h3>
-                <p class="team-member__descr">UI Designer</p>
+              <div class="team-list__thumb">
+                <h3 class="team-list__title">Михайло Єрмаков</h3>
+                <p class="team-list__descr">UI Designer</p>
                 <ul class="social-list list">
                   <li>
                     <a
                       href="https://www.instagram.com/reel/CiNuIXJK9c2/?igshid=MDJmNzVkMjY="
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -446,7 +446,7 @@
                   <li>
                     <a
                       href="https://twitter.com/narik_aliev/status/1580271273154088961?t=h1B4kh4Cckt_f39rNes0pg&s=19"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -461,7 +461,7 @@
                   <li>
                     <a
                       href="https://m.facebook.com/story.php?story_fbid=pfbid0i3GLEoEnbGa5veNkAZwb8phAN2K2F2kqnucc8ArQtwpkTTEEUkhczSsixQj2YfxQl&id=100063494801219"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -476,7 +476,7 @@
                   <li>
                     <a
                       href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                      class="social-list__container"
+                      class="social-list__link"
                     >
                       <svg
                         class="social-list__icon"
@@ -495,14 +495,14 @@
         </div>
       </section>
       <!-- Клієнти -->
-      <section class="section clients">
+      <section class="section">
         <div class="container">
-          <h2 class="section-title">Постійні клієнти</h2>
+          <h2 class="section__title">Постійні клієнти</h2>
           <ul class="clients-list list">
-            <li class="client">
-              <a href="" class="client__link"
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
                 ><svg
-                  class="client__logo"
+                  class="clients-list__logo"
                   width="106px"
                   height="60px"
                   aria-label="company logo icon"
@@ -510,10 +510,10 @@
                   <use href="./images/icons.svg#logorectangle"></use></svg
               ></a>
             </li>
-            <li class="client">
-              <a href="" class="client__link"
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
                 ><svg
-                  class="client__logo"
+                  class="clients-list__logo"
                   width="106px"
                   height="60px"
                   aria-label="company logo icon"
@@ -521,10 +521,10 @@
                   <use href="./images/icons.svg#logopaper"></use></svg
               ></a>
             </li>
-            <li class="client">
-              <a href="" class="client__link"
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
                 ><svg
-                  class="client__logo"
+                  class="clients-list__logo"
                   width="106px"
                   height="60px"
                   aria-label="company logo icon"
@@ -532,10 +532,10 @@
                   <use href="./images/icons.svg#logosphere"></use></svg
               ></a>
             </li>
-            <li class="client">
-              <a href="" class="client__link"
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
                 ><svg
-                  class="client__logo"
+                  class="clients-list__logo"
                   width="106px"
                   height="60px"
                   aria-label="company logo icon"
@@ -543,10 +543,10 @@
                   <use href="./images/icons.svg#logodrops"></use></svg
               ></a>
             </li>
-            <li class="client">
-              <a href="" class="client__link"
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
                 ><svg
-                  class="client__logo"
+                  class="clients-list__logo"
                   width="106px"
                   height="60px"
                   aria-label="company logo icon"
@@ -554,10 +554,10 @@
                   <use href="./images/icons.svg#logoleaves"></use></svg
               ></a>
             </li>
-            <li class="client">
-              <a href="" class="client__link"
+            <li class="clients-list__item">
+              <a href="" class="clients-list__link"
                 ><svg
-                  class="client__logo"
+                  class="clients-list__logo"
                   width="106px"
                   height="60px"
                   aria-label="company logo icon"
@@ -574,7 +574,7 @@
       <div class="container footer-container">
         <div class="footer-contacts">
           <a href="/" class="logo footer__logo link"
-            ><span class="logo--accent">Web</span>Studio
+            ><span class="logo__accent">Web</span>Studio
           </a>
           <address class="footer-contacts__list">
             <ul class="list">
@@ -606,7 +606,7 @@
             <li>
               <a
                 href="https://www.instagram.com/reel/CiNuIXJK9c2/?igshid=MDJmNzVkMjY="
-                class="social-list__container social-list__container--theme-black"
+                class="social-list__link social-list__link--theme-black"
               >
                 <svg
                   class="social-list__icon social-list__icon--theme-black"
@@ -621,7 +621,7 @@
             <li>
               <a
                 href="https://twitter.com/narik_aliev/status/1580271273154088961?t=h1B4kh4Cckt_f39rNes0pg&s=19"
-                class="social-list__container social-list__container--theme-black"
+                class="social-list__link social-list__link--theme-black"
               >
                 <svg
                   class="social-list__icon social-list__icon--theme-black"
@@ -636,7 +636,7 @@
             <li>
               <a
                 href="https://m.facebook.com/story.php?story_fbid=pfbid0i3GLEoEnbGa5veNkAZwb8phAN2K2F2kqnucc8ArQtwpkTTEEUkhczSsixQj2YfxQl&id=100063494801219"
-                class="social-list__container social-list__container--theme-black"
+                class="social-list__link social-list__link--theme-black"
               >
                 <svg
                   class="social-list__icon social-list__icon--theme-black"
@@ -651,7 +651,7 @@
             <li>
               <a
                 href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-                class="social-list__container social-list__container--theme-black"
+                class="social-list__link social-list__link--theme-black"
               >
                 <svg
                   class="social-list__icon social-list__icon--theme-black"

@@ -201,7 +201,7 @@
   border-radius: 2px;
   cursor: pointer;
   margin-right: 7px;
-  transition: border-color var(--transition-param);
+  transition: border var(--transition-param), fill var(--transition-param);
 
   .field-conditions__input:checked + & {
     fill: var(--accent-color);
